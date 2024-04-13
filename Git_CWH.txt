@@ -1,0 +1,75 @@
+Create a folder
+open this folder in vs code as well as git bash
+
+ranji@Ranjit_PC MINGW64 /d/GitHub
+$ git --version              -> it shows the version
+git version 2.44.0.windows.1
+
+ranji@Ranjit_PC MINGW64 /d/GitHub
+$ ls                        -> it shows the list of files (excluding hidden)
+
+ranji@Ranjit_PC MINGW64 /d/GitHub
+$ ls -lart                  -> it shows the list of all files including hidden files
+total 4
+drwxr-xr-x 1 ranji 197609 0 Apr 13 12:24 ./
+drwxr-xr-x 1 ranji 197609 0 Apr 13 12:25 ../
+
+** Git is not initialized in this folder
+
+ranji@Ranjit_PC MINGW64 /d/GitHub
+$ git init               -> initialize git
+Initialized empty Git repository in D:/GitHub/.git/
+
+ranji@Ranjit_PC MINGW64 /d/GitHub (master)       -> we are in master branch
+$ ls -lart
+total 4
+drwxr-xr-x 1 ranji 197609 0 Apr 13 12:25 ../
+-rw-r--r-- 1 ranji 197609 0 Apr 13 12:28 Git_CWH.txt
+drwxr-xr-x 1 ranji 197609 0 Apr 13 12:31 ./
+drwxr-xr-x 1 ranji 197609 0 Apr 13 12:31 .git/       -> git initialized sucessfully
+
+** creating a html file in the folder
+
+ranji@Ranjit_PC MINGW64 /d/GitHub (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git_CWH.txt						- these are the two files that is untracked
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+        -------------                   --------------                  ------------                    ----------
+        | untracked |                   | unmodified |                  | modified |                    | staged |
+        -------------                   --------------                  ------------                    ----------
+              |                                |                              |                              |	
+              |                                |                              |                              |	
+              |--Add this file------------------------------------------------------------------------------>|	
+              |                                |                              |                              |	
+              |                                |                              |                              |	
+              |                                |--Edit this file------------->|                              | 
+              |                                |                              |                              |	
+              |                                |                              |                              |	
+              |                                |                              |--stage the file------------->|	
+              |                                |                              |                              |	
+              |                                |                              |                              |	
+              |<--------------remove the file--|                              |                              |	
+              |                                |                              |                              |	
+              |                                |                              |                              |	
+              |                                |<----------------------------------------------------commit--| 
+
+
+
+
+
+
+
+
+
+
+
+
